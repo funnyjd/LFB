@@ -710,12 +710,11 @@ if page==pages[5] :
 
     elif bibliographie_choice == "Publications, articles et études consultés":
         st.markdown("""
-        - [Review and comparison of prediction algorithms for the estimated time of arrival using geospatial transportation data.](https://doi.org/10.1016/j.procs.2021.11.003)
-        - [GPS is (finally) coming to the London Fire Department.](https://www.cbc.ca/news/canada/london/london-fire-department-gps-computerized-dispatch-system-field-tested-2021-1.5801119)
-        - [Guide relatif aux opérations des services de sécurité incendie.](https://cdn-contenu.quebec.ca/cdn-contenu/adm/min/securitepublique/publications-adm/publications-secteurs/securite-incendie/services-securite-incendie/guides-reference-ssi/guide_operations_2024_2_01.pdf)
-        - [Modelling residential fire incident response times: A spatial analytic approach.](https://doi.org/10.1016/j.apgeog.2017.03.004)
-        - [Scalable Real-time Prediction and Analysis of San Francisco Fire Department Response Times.](https://doi.org/10.1109/SmartWorld-UIC-ATC-SCALCOM-IOP-SCI.2019.00154)
-        - [Survey of ETA prediction methods in public transport networks.](http://arxiv.org/abs/1904.05037)
-        - [Impact of weather conditions on macroscopic urban travel times.](https://doi.org/10.1016/j.jtrangeo.2012.11.003)
+        - [Review and comparison of prediction algorithms for the estimated time of arrival using geospatial transportation data](https://doi.org/10.1016/j.procs.2021.11.003)
+        - [GPS is (finally) coming to the London Fire Department](https://www.cbc.ca/news/canada/london/london-fire-department-gps-computerized-dispatch-system-field-tested-2021-1.5801119)
+        - [Guide relatif aux opérations des services de sécurité incendie](https://cdn-contenu.quebec.ca/cdn-contenu/adm/min/securitepublique/publications-adm/publications-secteurs/securite-incendie/services-securite-incendie/guides-reference-ssi/guide_operations_2024_2_01.pdf)
+        - [Modelling residential fire incident response times: A spatial analytic approach](https://doi.org/10.1016/j.apgeog.2017.03.004)
+        - [Scalable Real-time Prediction and Analysis of San Francisco Fire Department Response Times](https://doi.org/10.1109/SmartWorld-UIC-ATC-SCALCOM-IOP-SCI.2019.00154)
+        - [Survey of ETA prediction methods in public transport networks](http://arxiv.org/abs/1904.05037)
+        - [Impact of weather conditions on macroscopic urban travel times](https://doi.org/10.1016/j.jtrangeo.2012.11.003)
         """)
-

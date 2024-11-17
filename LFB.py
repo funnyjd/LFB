@@ -292,7 +292,7 @@ if page==pages[2] :
     if categories[0] in categorie :
 
         types=["Incidents par types", "Incidents par périodes", "Incidents par localisation"]
-        type=st.multiselect("Sélection", types)
+        type=st.multiselect("_Sélection_", types)
 
         if types[0] in type : 
             
@@ -705,7 +705,7 @@ if page==pages[5] :
     if bibliographie_choice == "Données":
         st.markdown("""
         - [London Fire Brigade Incident Records - Ville de Londres](https://data.london.gov.uk/dataset/london-fire-brigade-incident-records)
-        - [Mobilisation Data - Ville de Londres](https://data.london.gov.uk/dataset/london-fire-brigade-mobilisation-records)
+        - [London Fire Brigade Mobilisation Records - Ville de Londres](https://data.london.gov.uk/dataset/london-fire-brigade-mobilisation-records)
         """)
 
     elif bibliographie_choice == "Publications, articles et études consultées":

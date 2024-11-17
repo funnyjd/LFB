@@ -590,8 +590,8 @@ if page==pages[3] :
     st.write("Prédire le temps de réponse de la Brigade des Pompiers de Londres")
  
     st.subheader("1. Étapes de Preprocessing & Modélisation")
-    st.markdown(""" 
-                📌 _Séparation en jeux de d'entraînement (75%) et de test (25%)\n
+    st.markdown("""_
+                📌 Séparation en jeux de d'entraînement (75%) et de test (25%)\n
                 📌 Gestion des valeurs nulles_\n
                 📌 Standardisation des données numériques\n
                 📌 Encodage des valeurs catégorielles avec OneHotEncoder\n

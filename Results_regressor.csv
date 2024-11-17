@@ -1,0 +1,17 @@
+;R² Train;R² Test;? R²;MAE;MSE;RMSE
+Régression Linéaire;0,31;0,31;-0,0011;79,03;12522,84;111,90
+Régression Ridge ;0,31;0,32;-0,0012;79,03;12522,48;111,90
+Régression SVR Linéaire;-0,78;-0,79;0,002;140,12;32672,88;180,76
+Régression SVR RBF;-4,52;-4,49;-0,029;294,79;99668,30;315,70
+Régression Decision Tree;0,29;0,29;0,000;81,16;12934,74;113,73
+Régression Random Forest 1;0,34;0,31;0,037;79,88;12689,21;112,65
+Régression Random Forest 2;0,32;0,3;0,023;80,25;12777,54;113,04
+Régression Gradient Boosting 1;0,36;0,32;0,043;78,76;12452,48;111,59
+Régression Gradient Boosting 2;0,33;0,30;0,033;79,66;12790,36;113,09
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;

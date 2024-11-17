@@ -68,7 +68,7 @@ Results_Reg, Distrib_RT, Inc1824_head, Inc1824_describe, Inc1824_NaN, Mob1520_he
 st.title("Projet de prédiction du temps de réponse de la Brigade des Pompiers de Londres")
 st.sidebar.title("Sommaire")
 pages=["Introduction ⛑️", "Exploration des données 🔎", "DataVizualization 📊", "Modélisation par Régression 🛠️", 
-       "Modélisation par Classification 🛠️","Conclusion 📌"]
+       "Modélisation par Classification 🛠️","Conclusion 📝"]
 page=st.sidebar.radio("Aller vers", pages)
 
 st.sidebar.title("Cursus")
@@ -591,14 +591,14 @@ if page==pages[3] :
  
     st.subheader("1. Étapes de Preprocessing & Modélisation")
     st.markdown(""" 
-                :pushpin: Séparation en jeux de d'entraînement (75%) et de test (25%)\n
-                :pushpin: Gestion des valeurs nulles\n
-                :pushpin: Standardisation des données numériques\n
-                :pushpin: Encodage des valeurs catégorielles avec OneHotEncoder\n
-                :pushpin: Transformation des variables circulaires (CalMonth, CalHour, CalWeekday)\n
-                :pushpin: Instanciation & entraînement des modèles\n
-                :pushpin: Prédictions de chaque modèle sur le jeu de test\n
-                :pushpin: Calcul des métriques de performance
+                📌 _Séparation en jeux de d'entraînement (75%) et de test (25%)\n
+                📌 Gestion des valeurs nulles_\n
+                📌 Standardisation des données numériques\n
+                📌 Encodage des valeurs catégorielles avec OneHotEncoder\n
+                📌 Transformation des variables circulaires (CalMonth, CalHour, CalWeekday)\n
+                📌 Instanciation & entraînement des modèles\n
+                📌 Prédictions de chaque modèle sur le jeu de test\n
+                📌 Calcul des métriques de performance_
                 """)
     
     st.subheader("2 .Comparaison des modèles")
@@ -616,10 +616,10 @@ if page==pages[4] :
     st.write("Prédire l'intervalle de temps de réponse de la Brigade des Pompiers de Londres")
 
     st.subheader("1. Classification de la variable cible")
-    st.write(":pushpin: _Distribution des valeurs avant la classification_")
+    st.write("📌 _Distribution des valeurs avant la classification_")
     st.image('distri_cible.png')
 
-    st.write(":pushpin: _Répartition des classes après la classification_")
+    st.write("📌 _Répartition des classes après la classification_")
     df1 = pd.DataFrame(
         {"Dataset": ["y_train", "y_test"],
         "Très Lente\n(plus de 500 sec)": [32865, 11011],
@@ -643,11 +643,11 @@ if page==pages[4] :
     # Créer une "select box" permettant de choisir le modèle de classification
     st.subheader("3. Entraînement des modèles")
     choix = ['Random Forest Classifier', 'Decision Tree Classifier', 'Logistic Regression']
-    option = st.selectbox('_Choisissez votre modèle_', choix)
+    option = st.selectbox('📌 _Choisissez votre modèle_', choix)
     st.write('Le modèle choisi est :', option)
 
     # Afficher des options à choisir pour scruter la performance
-    display = st.radio("_Choisissez l'indicateur de performance_", ('Accuracy', 'Confusion Matrix'))
+    display = st.radio("📌 _Choisissez l'indicateur de performance_", ('Accuracy', 'Confusion Matrix'))
 
     if display == 'Accuracy' and option == 'Random Forest Classifier':
         st.write('54,7%')

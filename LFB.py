@@ -150,7 +150,7 @@ if page==pages[1] :
     st.write("Cette section présente un aperçu des différentes données utilisées pour l'analyse.")
     
 # Sélection du jeu de données
-    dataset_choice = st.radio("Choisissez un jeu de données à explorer", 
+    dataset_choice = st.radio("_Choisissez un jeu de données à explorer_", 
                               ["Incidents (2018-2024)", "Mobilisation (2015-2020)", "Mobilisation (2021-2024)", "Jeu de données final : 2018 - 2023"])
     
     if dataset_choice == "Incidents (2018-2024)":
@@ -287,7 +287,7 @@ if page==pages[2] :
     st.header("DataVizualization 📊")
     
     categories=["Analyses Univariées", "Analyses Multivariées", "Analyses Statistiques"]
-    categorie=st.selectbox("Types d'analyses", categories)
+    categorie=st.selectbox("_Types d'analyses_", categories)
 
     if categories[0] in categorie :
 
@@ -429,7 +429,7 @@ if page==pages[2] :
     if categories[1] in categorie :
         
         types=["Distribution du temps de réponse", "Temps de réponse par périodes", "Temps de réponse par lieux de déploiements"]
-        type=st.multiselect("Sélection", types)
+        type=st.multiselect("_Sélection_", types)
 
         if types[0] in type :   
             
@@ -643,11 +643,11 @@ if page==pages[4] :
     # Créer une "select box" permettant de choisir le modèle de classification
     st.subheader("3. Entraînement des modèles")
     choix = ['Random Forest Classifier', 'Decision Tree Classifier', 'Logistic Regression']
-    option = st.selectbox('📌 Choisissez votre modèle', choix)
+    option = st.selectbox('_Choisissez votre modèle_', choix)
     st.write('Le modèle choisi est :', option)
 
     # Afficher des options à choisir pour scruter la performance
-    display = st.radio("📌 Choisissez l'indicateur de performance", ('Accuracy', 'Confusion Matrix'))
+    display = st.radio("_Choisissez l'indicateur de performance_", ('Accuracy', 'Confusion Matrix'))
 
     if display == 'Accuracy' and option == 'Random Forest Classifier':
         st.write('54,7%')

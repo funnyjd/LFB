@@ -697,7 +697,7 @@ if page==pages[5] :
     st.subheader("4. Bibliographie")
 
     bibliographie_choice = st.radio(
-        "Quelle bibliographie souhaitez-vous consulter ?",
+        "_Choisissez la bibliographie que vous souhaitez consulter_",
         ["Données", "Publications, articles et études consultées"]
     )
 

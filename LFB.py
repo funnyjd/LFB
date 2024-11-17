@@ -708,7 +708,7 @@ if page==pages[5] :
         - [London Fire Brigade Mobilisation Records - Ville de Londres](https://data.london.gov.uk/dataset/london-fire-brigade-mobilisation-records)
         """)
 
-    elif bibliographie_choice == "Publications, articles et études consultées":
+    elif bibliographie_choice == "Publications, articles et études consultés":
         st.markdown("""
         - [Review and comparison of prediction algorithms for the estimated time of arrival using geospatial transportation data.](https://doi.org/10.1016/j.procs.2021.11.003)
         - [GPS is (finally) coming to the London Fire Department.](https://www.cbc.ca/news/canada/london/london-fire-department-gps-computerized-dispatch-system-field-tested-2021-1.5801119)

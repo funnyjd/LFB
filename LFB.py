@@ -605,7 +605,7 @@ if page==pages[3] :
     if 'Unnamed: 0' in Results_Reg.columns:
         Results_Reg.set_index('Unnamed: 0', inplace=True)
     Results_Reg.index.name=None
-    Results_Reg.rename(columns={'?R²': '∆ R²'}, inplace=True)
+    Results_Reg.rename(columns={"?R²": "∆ R²"}, inplace=True)
     st.dataframe(Results_Reg.head(9))    
 
 if page==pages[4] :
@@ -620,20 +620,14 @@ if page==pages[4] :
     st.image('distri_cible.png')
 
     st.write(":pushpin: _Répartition des classes après la classification_")
-    df1 = pd.DataFrame([
-        {"Dataset": "y_train", 
-        "Très Lente\n(plus de 500 sec)": 32865, 
-        "Lente\n(400-500 sec)": 69645, 
-        "Modérée\n(300-400 sec)": 75821, 
-        "Rapide\n(200-300 sec)": 207009, 
-        "Très Rapide\n(0-200 sec)": 90178},
-        {"Dataset": "y_test", 
-        "Très Lente\n(plus de 500 sec)": 11011, 
-        "Lente\n(400-500 sec)": 23374, 
-        "Modérée\n(300-400 sec)": 25249, 
-        "Rapide\n(200-300 sec)": 69026, 
-        "Très Rapide\n(0-200 sec)": 29847}
-        ])
+    df1 = pd.DataFrame(
+        {"Dataset": ["y_train", "y_test"],
+        "Très Lente\n(plus de 500 sec)": [32865, 11011],
+        "Lente\n(400-500 sec)": [69645, 23374],
+        "Modérée\n(300-400 sec)": [75821, 25249],
+        "Rapide\n(200-300 sec)": [207009, 69026],
+        "Très Rapide\n(0-200 sec)": [90178, 29847]}
+        )
     st.dataframe(df1, use_container_width=True, hide_index=True)
 
     st.subheader("2. Calcul du poids des classes ")

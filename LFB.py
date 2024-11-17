@@ -37,7 +37,7 @@ st.markdown(
 
     /* Changer la couleur des titres */
     h3 {
-        color: #0f52ba;
+        color: #ffd700;
         font-weight: normal; /* Mettre les titres h2 sans gras */
     }
     """,

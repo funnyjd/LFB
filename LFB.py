@@ -31,7 +31,7 @@ st.markdown(
 
     /* Changer la couleur des titres */
     h2 {
-        color: #0f52ba;
+        color: #ffd700;
         font-weight: bold; /* Mettre les titres en gras */
     }
 

@@ -698,7 +698,7 @@ if page==pages[5] :
 
     bibliographie_choice = st.radio(
         "_Choisissez la bibliographie que vous souhaitez consulter_",
-        ["Données", "Publications, articles et études consultées"]
+        ["Données", "Publications, articles et études consultés"]
     )
 
     # Contenu affiché en fonction du choix

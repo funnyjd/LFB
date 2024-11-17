@@ -591,13 +591,13 @@ if page==pages[3] :
  
     st.subheader("1. Étapes de Preprocessing & Modélisation")
     st.markdown(""" 
-                :pushpin: Séparation en jeux de d'entraînement (75%) et de test (25%)
-                :pushpin: Gestion des valeurs nulles
-                :pushpin: Standardisation des données numériques
-                :pushpin: Encodage des valeurs catégorielles avec OneHotEncoder
-                :pushpin: Transformation des variables circulaires (CalMonth, CalHour, CalWeekday)
-                :pushpin: Instanciation & entraînement des modèles
-                :pushpin: Prédictions de chaque modèle sur le jeu de test 
+                :pushpin: Séparation en jeux de d'entraînement (75%) et de test (25%)\n
+                :pushpin: Gestion des valeurs nulles\n
+                :pushpin: Standardisation des données numériques\n
+                :pushpin: Encodage des valeurs catégorielles avec OneHotEncoder\n
+                :pushpin: Transformation des variables circulaires (CalMonth, CalHour, CalWeekday)\n
+                :pushpin: Instanciation & entraînement des modèles\n
+                :pushpin: Prédictions de chaque modèle sur le jeu de test\n
                 :pushpin: Calcul des métriques de performance
                 """)
     

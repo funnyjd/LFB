@@ -590,7 +590,7 @@ if page==pages[3] :
     st.write("Prédire le temps de réponse de la Brigade des Pompiers de Londres")
  
     st.subheader("1. Étapes de Preprocessing & Modélisation")
-    st.markdown("""_
+    st.markdown("""
                 📌 Séparation en jeux de d'entraînement (75%) et de test (25%)\n
                 📌 Gestion des valeurs nulles_\n
                 📌 Standardisation des données numériques\n
@@ -598,7 +598,7 @@ if page==pages[3] :
                 📌 Transformation des variables circulaires (CalMonth, CalHour, CalWeekday)\n
                 📌 Instanciation & entraînement des modèles\n
                 📌 Prédictions de chaque modèle sur le jeu de test\n
-                📌 Calcul des métriques de performance_
+                📌 Calcul des métriques de performance
                 """)
     
     st.subheader("2 .Comparaison des modèles")
@@ -616,10 +616,10 @@ if page==pages[4] :
     st.write("Prédire l'intervalle de temps de réponse de la Brigade des Pompiers de Londres")
 
     st.subheader("1. Classification de la variable cible")
-    st.write("📌 _Distribution des valeurs avant la classification_")
+    st.write("📌 Distribution des valeurs avant la classification")
     st.image('distri_cible.png')
 
-    st.write("📌 _Répartition des classes après la classification_")
+    st.write("📌 Répartition des classes après la classification")
     df1 = pd.DataFrame(
         {"Dataset": ["y_train", "y_test"],
         "Très Lente\n(plus de 500 sec)": [32865, 11011],
@@ -643,11 +643,11 @@ if page==pages[4] :
     # Créer une "select box" permettant de choisir le modèle de classification
     st.subheader("3. Entraînement des modèles")
     choix = ['Random Forest Classifier', 'Decision Tree Classifier', 'Logistic Regression']
-    option = st.selectbox('📌 _Choisissez votre modèle_', choix)
+    option = st.selectbox('📌 Choisissez votre modèle', choix)
     st.write('Le modèle choisi est :', option)
 
     # Afficher des options à choisir pour scruter la performance
-    display = st.radio("📌 _Choisissez l'indicateur de performance_", ('Accuracy', 'Confusion Matrix'))
+    display = st.radio("📌 Choisissez l'indicateur de performance", ('Accuracy', 'Confusion Matrix'))
 
     if display == 'Accuracy' and option == 'Random Forest Classifier':
         st.write('54,7%')

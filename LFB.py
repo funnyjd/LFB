@@ -65,7 +65,7 @@ def load_data():
 
 Results_Reg, Distrib_RT, Inc1824_head, Inc1824_describe, Inc1824_NaN, Mob1520_head, Mob1520_describe, Mob1520_NaN, Mob2124_head, Mob2124_describe, Mob2124_NaN, Final_head, Final_describe, Final_NaN = load_data()
 
-st.title("Prédiction du temps de réponse de la Brigade des Pompiers de Londres")
+st.title("Temps de Réponse de la Brigade des Pompiers de Londres")
 st.sidebar.title("Sommaire")
 pages=["Introduction ⛑️", "Exploration des données 🔎", "DataVizualization 📊", "Modélisation par Régression 🛠️", 
        "Modélisation par Classification 🛠️","Conclusion 📝"]

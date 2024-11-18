@@ -75,7 +75,7 @@ st.sidebar.title("Cursus")
 
 st.sidebar.markdown(f"""
 <div style="display: flex; align-items: center;">
-    <p style="margin: 0;">Data Analyst</p>
+    <p style="margin: 0;">Data Analytics</p>
     </a>
 </div>
 """, unsafe_allow_html=True)

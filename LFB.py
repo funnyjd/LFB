@@ -605,7 +605,7 @@ if page==pages[3] :
     if 'Unnamed: 0' in Results_Reg.columns:
         Results_Reg.set_index('Unnamed: 0', inplace=True)
     Results_Reg.index.name=None
-    Results_Reg.rename(columns={"?R²": "Écart R²"}, inplace=True)
+    Results_Reg.rename(columns={"? R²": "∆ R²"}, inplace=True)
     st.dataframe(Results_Reg.head(9))    
 
 if page==pages[4] :

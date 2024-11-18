@@ -630,7 +630,7 @@ if page==pages[4] :
         )
     st.dataframe(df1, use_container_width=True, hide_index=True)
 
-    st.subheader("2. Calcul du poids des classes ")
+    st.subheader("2. Calcul et intégration du poids des classes dans la modélisation")
     df2 = pd.DataFrame(
         {"Très Lente": [2.8939049995435595],
         "Lente": [1.365530906741331],
@@ -677,13 +677,17 @@ if page==pages[5] :
     st.subheader("2. Problèmes rencontrés")
     st.markdown("""
     **Jeux de données :**  
-    - Séparation initiale des jeux de données en plusieurs fichiers couvrant diverses périodes, nécessitant de nombreuses itérations pour le nettoyage et le traitement des valeurs nulles.
+    - De nombreuses itérations ont été nécessaires afin d'extraire et de préparer le jeu de données à partir de plusieurs fichiers sources couvrant de diverses périodes à qualité inégalée.
 
-    **Problèmes liés à l'IT :**  
-    - La volumétrie importante du jeu de données a limité nos options d'encodage, nécessitant des regroupements dans certaines catégories.
+    **Contraintes liées à la capacité IT :**  
+    - La capacité computationnelle de l'outil utilisé (Google Colab en version gratuite) dans ce projet est insuffisante au regard de la volumétrie importante du jeu de données. 
+    De ce fait, nous avons dû limiter par choix le nombre de variables et regrouper les dimensions de certaines.
 
+    **Modélisation :**
+    - La modélisation par régression étant inexploitable faute d'une performance suffisante, nous avons dû reformuler le problème en classification et ré-itérer les étapes de pre-processing et de modélisation.
+    
     **Prévisionnel :**  
-    - Le temps de traitement et de nettoyage a été conséquent, réduisant la phase d'optimisation et de finalisation.
+    - Le nombre d'itérations a été conséquent pour la préparation des données et la modélisation, le temps consacré à l'optimisation de l'ensemble est réduit.
     """)
 
     st.subheader("3. Suite du projet")

@@ -284,7 +284,7 @@ if page==pages[1] :
 
 if page==pages[2] :
     st.image("lfb.png")
-    st.header("DataVizualization 📊")
+    st.header("Analyse des données 📊")
     
     categories=["Analyses Univariées", "Analyses Multivariées", "Analyses Statistiques"]
     categorie=st.selectbox("_Types d'analyses_", categories)

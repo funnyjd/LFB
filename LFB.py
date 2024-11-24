@@ -67,8 +67,8 @@ Results_Reg, Distrib_RT, Inc1824_head, Inc1824_describe, Inc1824_NaN, Mob1520_he
 
 st.title("Temps de Réponse de la Brigade des Pompiers de Londres")
 st.sidebar.title("Sommaire")
-pages=["Introduction ⛑️", "Exploration des données 🔎", "DataVizualization 📊", "Modélisation par Régression 🛠️", 
-       "Modélisation par Classification 🛠️","Conclusion 📝"]
+pages=["Introduction ⛑️", "Exploration des données 🔎", "Analyse des données 📊", "Modélisation par Régression 🛠️", 
+       "Modélisation par Classification 🛠️", "Conclusion 📝"]
 page=st.sidebar.radio("Aller vers", pages)
 
 st.sidebar.title("Cursus")
